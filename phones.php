@@ -1,6 +1,7 @@
 <?php
+    require_once("product.php");
 
-    class Phones {
+    class Phones extends product{
         public $strFinish = "We dont have more information about this product";
 
         public $strType;
@@ -9,8 +10,8 @@
         public $intNumber;
 
 
-        public function __construct(string $type, string $color, string $capacity)
-        {
+        public function __construct(string $smartProduct, string $type, string $color, string $capacity){
+            parent::__construct($smartProduct);
             $this->strType = $type;
             $this->strColor = $color;
             $this->intCapacity = $capacity;
@@ -30,21 +31,22 @@
 
         public function TurnOff(string $yesNot){
             if($yesNot == "yes"){
-                echo "The phone is calling someone";
+                echo "The phone is turn off";
             } else if($yesNot == "no"){
-                echo "The phone is not calling";
+                echo "The phone is turn on";
             } else{
                 echo "Te phone is broken";
             }
         }
 
-        public function TakePicture(){
+        public function x(){
             echo "The phone is doing a picture";
         }
     
 
         public function data(){
             $strData = "<h4>This are the product properties:</h4><hr>
+            Smart Product: {$this->strSmartProduct},<br>
             Type: {$this->strType},<br>
             Color: {$this->strColor}<br>
             Capacity: {$this->intCapacity}gb<br>";

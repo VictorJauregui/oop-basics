@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(199, 221, 255);
+
+}
+
+.card {
+    width: 20%;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.samsung{
+    width: 500px;
+}
