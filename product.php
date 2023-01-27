@@ -1,14 +1,16 @@
 <?php
 
-    abstract class product{
-        public $strSmartProduct;
-        
-        public function __construct(string $smartProduct)
+    abstract class product {
+        protected $strCapacity;
+        protected $strColor;
+        public function __construct(string $color, string $capacity)
         {
-            $this->strSmartProduct = $smartProduct;
+            $this->strCapacity = $capacity;
+            $this->strColor = $color;
         }
         
         abstract function data();
+        abstract function takePicture();
     } 
 
 

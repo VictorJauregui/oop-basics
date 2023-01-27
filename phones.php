@@ -10,8 +10,8 @@
         public $intNumber;
 
 
-        public function __construct(string $smartProduct, string $type, string $color, string $capacity){
-            parent::__construct($smartProduct);
+        public function __construct(string $type, string $color, string $capacity){
+            parent::__construct($color, $capacity);
             $this->strType = $type;
             $this->strColor = $color;
             $this->intCapacity = $capacity;
@@ -39,14 +39,13 @@
             }
         }
 
-        public function x(){
+        public function takePicture(){
             echo "The phone is doing a picture";
         }
     
 
         public function data(){
             $strData = "<h4>This are the product properties:</h4><hr>
-            Smart Product: {$this->strSmartProduct},<br>
             Type: {$this->strType},<br>
             Color: {$this->strColor}<br>
             Capacity: {$this->intCapacity}gb<br>";

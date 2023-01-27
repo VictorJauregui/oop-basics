@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(199, 221, 255);
+    background: url("assets/img/background.png")
 
 }
 
@@ -21,4 +21,15 @@ body {
 
 .samsung{
     width: 500px;
+}
+
+.img-logo{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
 }
