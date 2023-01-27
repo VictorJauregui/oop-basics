@@ -19,17 +19,17 @@
     require_once("iphone.php");
     require_once("start.php");
 
-    $phone = new Phones("Smartphone","Phone","Blue", 256);
+    $phone = new Phones("Smartphone","Blue", 256);
     echo $phone->data();
     echo "Status: " .iphone::$strStatus."<br>";
 
-    $newSamnsung = new Iphone("Smartphone","Samsung M53","Blue", 256, 15, 1080); 
+    $newSamnsung = new Iphone("Smartphone","Blue",256, 15, 1080); 
     
     echo $newSamnsung->data() ."<br>";
     echo "Status: " .iphone::$strStatus."<br>";
 
     $phoneStart = new start();
-    echo $phoneStart->light("no");
+    echo $phoneStart->light("yes");
 
 ;
  
