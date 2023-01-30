@@ -29,7 +29,7 @@
     echo "Status: " .iphone::$strStatus."<br>";
 
     $phoneStart = new start();
-    echo $phoneStart->light("yes");
+    echo $phoneStart->light("no");
 
 ;
  
